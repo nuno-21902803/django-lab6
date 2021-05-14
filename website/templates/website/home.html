@@ -1,0 +1,13 @@
+{% extends 'website/base.html' %}
+
+{% block main %}
+    <h3>Home</h3>
+
+    {% if hora < 12 %}
+        <p>Bom dia, são {{ hora }} horas e estamos em {{ year }}</p>
+    {% else %}
+        <p>Boa tarde, são {{ hora }} horas e estamos em {{ year }}</p>
+    {% endif %}
+
+    <p>Ola maltinha tou no ficheiro home.html</p>
+{% endblock %}

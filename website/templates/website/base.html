@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DjangoProject</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'website/css/base.css' %}">
+
+</head>
+<body>
+    <header class="jumbotron text-center">
+        <h1>Lab6 - Django</h1>
+        <p>Lab6 - Django</p>
+        <nav>
+            <a href="{% url 'website:home' %}" class="btn btn-info">Home</a>
+            <a href="{% url 'website:about' %}" class="btn btn-info">About</a>
+            <a href="{% url 'website:details' %}" class="btn btn-info">Details</a>
+        </nav>
+    </header>
+
+
+    <article class="container">
+        <main class="col-sm-6">
+        	{% block main %}
+	        {% endblock main %}
+        </main>
+
+        <aside class="col-sm-6">
+            {% load static %}
+            <img src="{% static 'website/images/benfica.png' %}">
+        </aside>
+
+    </article>
+    <footer>Nuno Filipe <-> DjangoP</footer>
+
+
+
+
+
+
+</body>
+</html>
