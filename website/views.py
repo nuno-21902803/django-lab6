@@ -6,9 +6,7 @@ def home_page_view(request):
     context = datetime.now()
     ano = datetime.now().year
 
-    return render(request, 'website/home.html',
-                  {'hora': context,
-                   'year': ano})
+    return render(request, 'website/home.html', {'hora': context, 'year': ano})
 
 
 def details_page_view(request):
