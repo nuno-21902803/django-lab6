@@ -1,1 +1,1 @@
-web: gunicorn config.wsgi --log-file -
+web: gunicorn djangoProject_lab_pw_6.wsgi --log-file -
